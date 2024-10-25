@@ -1,0 +1,53 @@
+import { Routes, Route, Navigate, Outlet, useLocation, useParams, useSearchParams } from 'react-router-dom';
+
+import { useState, lazy } from 'react';
+
+// project imports
+// import Loadable from '@/ui-component/Loadable';
+
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { CssBaseline, StyledEngineProvider, Box, Typography } from '@mui/material';
+import { List, ListItem, Stack } from '@mui/material';
+
+function App() {
+    return (
+        <Stack >
+            <h1> The Lord of the Rings: The Two Tower</h1>
+            <h1> The Lord of the Rings: The Two Tower</h1>
+            <h1> Site map</h1>
+            <List sx={{ listStyleType: 'disc' }}>
+                <ListItem>The Shawshank Redemption</ListItem>
+                <ListItem nested>
+                    <ListItem sx={{ display: 'list-item' }} >Star Wars
+                        <ListItem sx={{ display: 'list-item', listStyleType: 'circle' }}>1
+                            <List sx={{ display: 'list-item', listStyleType: 'square' }}>a</List>
+                            <List sx={{ display: 'list-item', listStyleType: 'square' }}>b</List>
+                        </ListItem>
+                        <List sx={{ display: 'list-item', listStyleType: 'circle' }}>2</List>
+                    </ListItem>
+
+                    <ListItem sx={{ display: 'list-item' }}>Episode I – The Phantom Menace
+                        <List sx={{ display: 'list-item', listStyleType: 'circle' }}>1</List>
+                        <List sx={{ display: 'list-item', listStyleType: 'circle' }}>2</List>
+                    </ListItem>
+                    <ListItem sx={{ display: 'list-item' }}>Episode II – Attack of the Clones
+                        <ListItem sx={{ display: 'list-item', listStyleType: 'circle' }}>1
+                            <List sx={{ display: 'list-item', listStyleType: 'square' }}>a</List>
+                            <List sx={{ display: 'list-item', listStyleType: 'square' }}>b</List>
+                        </ListItem>
+                        <List sx={{ display: 'list-item', listStyleType: 'circle' }}>2</List>
+                    </ListItem>
+                    <ListItem sx={{ display: 'list-item' }}> Episode III – Revenge of the Sith
+                        <List sx={{ display: 'list-item', listStyleType: 'circle' }}>1</List>
+                        <List sx={{ display: 'list-item', listStyleType: 'circle' }}>2</List>
+                    </ListItem>
+
+                </ListItem>
+                <ListItem>The Lord of the Rings: The Two Towers</ListItem>
+            </List>
+
+        </Stack>
+    );
+}
+
+export default App;
