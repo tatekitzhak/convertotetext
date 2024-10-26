@@ -44,7 +44,7 @@ const baseUrl = `http://localhost:8080/${ServerEndpoints.UPLOAD_FILE}`;
 
 const file_upload_content = {
   headline: 'Convert Audio to Text',
-  content: 'To show how to use Material UI with React Hook Form, we will build a complete form with the most-used input components provided by Material UI: the text input, radio input, dropdown, date, checkbox, and slider. The form will also have reset functionality. It will look like this:'
+  content: 'Free online Audio to Text Converter.'
 };
 
 // Initail form values

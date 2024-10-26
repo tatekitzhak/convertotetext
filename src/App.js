@@ -41,8 +41,8 @@ function App(props) {
     const theme = createTheme(customization);
     return (
         <StyledEngineProvider injectFirst>
-            <ThemeProvider theme={customization}>
-                {/* <CssBaseline /> */}
+            <ThemeProvider theme={theme}>
+                <CssBaseline />
                 {/* <NavigationScroll><ThemeRoutes /></NavigationScroll> */}
                 {/* <Box>
                     <HeaderLayout />
